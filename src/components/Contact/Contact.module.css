@@ -1,0 +1,73 @@
+.section {
+  padding: 5rem;
+  border-top: 1px solid var(--border);
+}
+
+.inner {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.label {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 420px;
+  margin: 0 auto 2.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.linkPrimary {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.linkOutline {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+    color: var(--accent);
+  }
+}

@@ -1,0 +1,116 @@
+.section {
+  padding: 8rem 1.5rem 5rem;
+  min-height: 100vh;
+}
+
+.inner {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.label {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+}
+
+.block {
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.paragraph strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.divider {
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.timelineDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.timelineContent {
+  flex: 1;
+}
+
+.timelinePeriod {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.timelineTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.timelineDescription {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.valueCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.valueTitle {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.valueDescription {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

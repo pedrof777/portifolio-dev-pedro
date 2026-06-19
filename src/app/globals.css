@@ -1,0 +1,38 @@
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #111118;
+  --bg-card-hover: #1a1a2e;
+  --accent: #00d4aa;
+  --accent-purple: #6c63ff;
+  --text-primary: #f0f0f0;
+  --text-muted: #999999;
+  --border: rgba(255, 255, 255, 0.05);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+}
