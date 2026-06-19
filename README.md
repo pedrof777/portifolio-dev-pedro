@@ -35,6 +35,6 @@ Acesse em `http://localhost:3000`
 
 ---
 
-🔗 **Site no ar:** [em breve]
+🔗 **Site no ar:** [portifolio-dev-pedro.vercel.app](https://portifolio-dev-pedro.vercel.app/)
 
 💼 **LinkedIn:** [linkedin.com/in/pedro-ferreira-developer-java](https://www.linkedin.com/in/pedro-ferreira-developer-java)

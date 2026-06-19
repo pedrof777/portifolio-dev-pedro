@@ -10,20 +10,13 @@ const fontInter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Pedro Ferreira | Desenvolvedor Full-Stack",
   description:
-    "Desenvolvedor Full-Stack especialista em Java, Spring Boot, Next.js,Typescript, React entre outras tecnologias.Freelancer baseado no Brasil.",
-  keywords: [
-    "desenvolvedor",
-    "java",
-    "spring boot",
-    "next.js",
-    "freelancer",
-    "full-stack",
-  ],
+    "Desenvolvedor Full-Stack especialista em Java, Spring Boot, Next.js,Typescript. Disponível para novos projetos e oportunidades.",
+  keywords: ["desenvolvedor", "java", "spring boot", "next.js", "full-stack"],
   authors: [{ name: "Pedro Ferreira" }],
   openGraph: {
     title: "Pedro Ferreira | Desenvolvedor Full-Stack",
     description:
-      "Desenvolvedor Full-Stack especialista em Java, Spring Boot, Next.js,Typescript, React entre outras tecnologias.Freelancer baseado no Brasil.",
+      "Desenvolvedor Full-Stack especialista em Java, Spring Boot, Next.js,Typescript. Disponível para novos projetos e oportunidades",
     locale: "pt-BR",
     type: "website",
   },

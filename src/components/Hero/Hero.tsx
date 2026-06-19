@@ -34,7 +34,7 @@ export default function Hero() {
           <Link href="/projetos" className={styles.btnPrimary}>
             Ver projetos
           </Link>
-          <Link href="#contatos" className={styles.btnOutline}>
+          <Link href="#contato" className={styles.btnOutline}>
             Entrar em contato
           </Link>
         </div>
