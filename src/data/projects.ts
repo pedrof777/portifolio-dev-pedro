@@ -56,4 +56,14 @@ export const projects: Project[] = [
     gitHub: "https://github.com/pedrof777/agendamentoBarbearia",
     featured: false,
   },
+  {
+    slug: "crm-freelancer",
+    title: "CRM Freelancer",
+    description:
+      "Sistema de gestão de clientes e orçamentos com CRUD completo, conectado a banco de dados real.",
+    longDescription: `Construí esse CRM para organizar meus próprios clientes e orçamentos como freelancer. O maior desafio foi modelar a relação entre clientes e orçamentos usando foreign key no banco — cada orçamento pertence a um cliente, e a exclusão em cascata garante integridade dos dados. Usei Supabase como backend completo (banco PostgreSQL, API e seguranca via RLS), o que me permitiu focar no front-end sem precisar construir um servidor do zero. A edição é feita inline na própria lista, sem páginas separadas, priorizando agilidade no uso diário.`,
+    techs: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL"],
+    gitHub: "https://github.com/pedrof777/crm-freelancer",
+    featured: true,
+  }
 ];
