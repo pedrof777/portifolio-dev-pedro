@@ -25,6 +25,7 @@ export const projects: Project[] = [
       "Docker",
       "Swagger",
     ],
+    demo: "https://cardapio-api-67zv.onrender.com/swagger-ui/index.html",
     gitHub: "https://github.com/pedrof777/cardapio-api",
     featured: true,
   },
@@ -57,13 +58,33 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    slug: "crm-freelancer",
-    title: "CRM Freelancer",
+    slug: "efood",
+    title: "eFood",
     description:
-      "Sistema de gestão de clientes e orçamentos com CRUD completo, conectado a banco de dados real.",
-    longDescription: `Construí esse CRM para organizar meus próprios clientes e orçamentos como freelancer. O maior desafio foi modelar a relação entre clientes e orçamentos usando foreign key no banco — cada orçamento pertence a um cliente, e a exclusão em cascata garante integridade dos dados. Usei Supabase como backend completo (banco PostgreSQL, API e seguranca via RLS), o que me permitiu focar no front-end sem precisar construir um servidor do zero. A edição é feita inline na própria lista, sem páginas separadas, priorizando agilidade no uso diário.`,
-    techs: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL"],
-    gitHub: "https://github.com/pedrof777/crm-freelancer",
+      "Aplicação de delivery de comida (e-commerce) com vitrine de restaurantes e checkout em múltiplas etapas.",
+    longDescription: `Desenvolvi uma aplicação de delivery de comida inspirada em plataformas como iFood. O app exibe uma vitrine com múltiplos restaurantes (cada um com nota de avaliação e categoria), permite navegar pelo cardápio de cada estabelecimento e adicionar itens ao carrinho. O maior desafio foi estruturar o fluxo de checkout em duas etapas — dados de entrega e pagamento — mantendo o estado do carrinho consistente durante toda a navegação.`,
+    techs: ["React", "TypeScript"],
+    demo: "https://efood-six-roan.vercel.app",
+    gitHub: "https://github.com/pedrof777/efood",
     featured: true,
-  }
+  },
+  {
+    slug: "financeiro-service",
+    title: "Financeiro Service",
+    description:
+      "Sistema de gestão financeira pessoal multi-tenant, com isolamento total de dados por usuário via JWT.",
+    longDescription: `Desenvolvi um sistema de gestão financeira pessoal com controle de contas bancárias, categorias e transações. O principal desafio foi garantir isolamento completo de dados entre usuários — nenhuma query é executada sem validar ownership, eliminando a vulnerabilidade "broken object level authorization" (BOLA), uma das mais comuns em APIs multi-tenant. O saldo é calculado em tempo real a partir das transações pagas, sem campo denormalizado no banco, e todos os valores monetários usam BigDecimal para precisão exata.`,
+    techs: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "JWT",
+      "PostgreSQL",
+      "Docker",
+      "JUnit 5",
+      "Mockito",
+    ],
+    gitHub: "https://github.com/pedrof777/sistema-financeiro",
+    featured: false,
+  },
 ];

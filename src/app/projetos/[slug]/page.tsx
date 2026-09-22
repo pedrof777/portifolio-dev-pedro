@@ -33,6 +33,16 @@ export default async function ProjetoPage({ params }: Props) {
         <p className={S.description}>{project.description}</p>
 
         <div className={S.links}>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${S.linkBtn} ${S.linkOutline}`}
+            >
+              {"Ver demo"}
+            </a>
+          )}
           {project.gitHub && (
             <a
               href={project.gitHub}
@@ -40,7 +50,7 @@ export default async function ProjetoPage({ params }: Props) {
               rel="noopener noreferrer"
               className={`${S.linkBtn} ${S.linkOutline}`}
             >
-              {"Ver demo"}
+              {"Ver gitHub"}
             </a>
           )}
         </div>
